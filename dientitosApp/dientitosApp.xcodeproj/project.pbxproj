@@ -144,7 +144,6 @@
 				9B4B507521E16710000913E7 /* Models */,
 				9B4B504521E165A8000913E7 /* AppDelegate.swift */,
 				9B4B504721E165A8000913E7 /* ViewController.swift */,
-				9B4B504921E165A8000913E7 /* Main.storyboard */,
 				9B4B504C21E165A9000913E7 /* Assets.xcassets */,
 				9B4B504E21E165A9000913E7 /* LaunchScreen.storyboard */,
 				9B4B505121E165A9000913E7 /* Info.plist */,
@@ -188,6 +187,7 @@
 		9B4B507721E16725000913E7 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				9B4B504921E165A8000913E7 /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
