@@ -35,6 +35,7 @@
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sing In"/>
                                 <connections>
+                                    <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uw-s6-l84"/>
                                     <segue destination="t69-sH-mJH" kind="popoverPresentation" popoverAnchorView="hZ9-Ox-sCk" id="bf5-kl-bPv">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -44,6 +45,7 @@
                                 <rect key="frame" x="143" y="525" width="89" height="30"/>
                                 <state key="normal" title="Register now"/>
                                 <connections>
+                                    <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECj-N2-QoM"/>
                                     <segue destination="6uy-S4-8LS" kind="show" id="Hpk-Q2-SDZ"/>
                                 </connections>
                             </button>
@@ -75,6 +77,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CHZ-2Z-tnS"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="RA9-uF-r8K" id="bFw-sC-y63"/>
+                        <outlet property="passwordTextField" destination="c4F-2h-Koc" id="RF6-Ae-FgR"/>
+                        <outlet property="registerButton" destination="av0-Ba-joZ" id="eZc-D2-2DM"/>
+                        <outlet property="signInButton" destination="hZ9-Ox-sCk" id="pie-Zt-dC3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +195,12 @@
                         <viewLayoutGuide key="safeArea" id="Twu-EG-6EJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="g46-qV-YRp"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="bbc-bd-ZnY" id="dA2-Av-bh2"/>
+                        <outlet property="nameTextField" destination="gHe-9Z-xck" id="GM2-4h-eJi"/>
+                        <outlet property="passwordTextField" destination="Irv-iX-V7n" id="gJw-9n-0Ah"/>
+                        <outlet property="registerUserButton" destination="oAg-tw-Lb1" id="Pbe-N2-crf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwH-qT-ZRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
