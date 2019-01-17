@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0263F34B344B063E9BE439EB /* Pods_dientitosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B381DE401F80AF5A0BC461 /* Pods_dientitosApp.framework */; };
+		3A28D78221EFFDBF0082AF77 /* AlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28D78121EFFDBF0082AF77 /* AlerController.swift */; };
 		58F50C502AE88B15324A7930 /* Pods_dientitosAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B31503AB7887E2C36037D /* Pods_dientitosAppTests.framework */; };
 		9B4B504621E165A8000913E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B504521E165A8000913E7 /* AppDelegate.swift */; };
 		9B4B504821E165A8000913E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B504721E165A8000913E7 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		0014D6619DC308B8B5A5BC35 /* Pods_dientitosAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dientitosAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F400E30B3338B65DC2BFB1F /* Pods-dientitosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dientitosAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dientitosAppUITests/Pods-dientitosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A28D78121EFFDBF0082AF77 /* AlerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlerController.swift; sourceTree = "<group>"; };
 		592A41126DABF6EAC91AA5E5 /* Pods-dientitosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dientitosAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dientitosAppTests/Pods-dientitosAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B61E573C24A79DA8D6E7958 /* Pods-dientitosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dientitosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-dientitosApp/Pods-dientitosApp.release.xcconfig"; sourceTree = "<group>"; };
 		70B65A9F25984C242F0C9AF9 /* Pods-dientitosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dientitosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dientitosApp/Pods-dientitosApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				9B4B507A21E82A39000913E7 /* RegisterViewController.swift */,
 				9B4B507E21E82B2A000913E7 /* LoginViewController.swift */,
 				9B4B507C21E82B1A000913E7 /* HomeViewController.swift */,
+				3A28D78121EFFDBF0082AF77 /* AlerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4B507B21E82A39000913E7 /* RegisterViewController.swift in Sources */,
+				3A28D78221EFFDBF0082AF77 /* AlerController.swift in Sources */,
 				9B4B504821E165A8000913E7 /* ViewController.swift in Sources */,
 				9B4B504621E165A8000913E7 /* AppDelegate.swift in Sources */,
 				9B4B507F21E82B2A000913E7 /* LoginViewController.swift in Sources */,

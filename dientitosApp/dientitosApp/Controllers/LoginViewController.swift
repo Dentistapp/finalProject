@@ -37,21 +37,38 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonTapped(_ sender: Any) {
-    }
+        //Login with Email and password with Firebase
+        guard let email = emailTextField.text,
+            email != "" else {
+                AlertController.showAlert(inViewController: self, title: "Missing email", message: "Please fill the email box")
+                print("You miss email")
+                return
+        }
+        guard let password = passwordTextField.text,
+            password != "" else {
+                AlertController.showAlert(inViewController: self, title: "Missing password", message: "Please fill the password box")
+                print("You miss name")
+                return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            guard error == nil else {
+                AlertController.showAlert(inViewController: self, title: "Error", message: error!.localizedDescription)
+                return
+            }
+            guard let user = user else { return }
+            print(user.user.email ?? "MISSING EMAIL")
+            print(user.user.displayName ?? "MISSING DISPLAY NAME")
+            print(user.user.uid)
+            
+            
+            self.performSegue(withIdentifier: "SignInSegue", sender: nil)
+            
+        }    }
     
     
     @IBAction func registerButtonTapped(_ sender: Any) {
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
     
     @objc func facebookButtonAction(sender: UIButton!) {
